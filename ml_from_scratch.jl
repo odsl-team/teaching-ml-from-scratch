@@ -36,6 +36,13 @@ using Plots, ProgressMeter
 using HDF5
 
 
+# ### Macro for "gap-code" in teaching settings
+
+macro TODO()
+    return :(error("TODO: Finish this code"))
+end
+
+
 # ### Compute platform selection
 
 # Set `run_on` to :CPU, :CUDA (NVIDIA GPUs), :AMDGPU (AMD GPUs), :oneAPI
